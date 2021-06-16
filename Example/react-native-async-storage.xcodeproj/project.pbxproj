@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		16FE0C40348ABAEA556853D1 /* Pods_react_native_async_storage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_react_native_async_storage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F5ACBD417E65576606FF575 /* react-native-async-storage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "react-native-async-storage.podspec"; path = "../react-native-async-storage.podspec"; sourceTree = "<group>"; };
+		1F5ACBD417E65576606FF575 /* react-native-async-storage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "react-native-async-storage.podspec"; path = "../react-native-async-storage.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		44FF40A68C63A9BF5E16DB2A /* Pods_react_native_async_storage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_react_native_async_storage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* react-native-async-storage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "react-native-async-storage_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,8 +65,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94BA7E46634D7D4DCA293206 /* Pods-react-native-async-storage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-native-async-storage_Tests.release.xcconfig"; path = "Target Support Files/Pods-react-native-async-storage_Tests/Pods-react-native-async-storage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9D5370B27867C3A192B08036 /* Pods-react-native-async-storage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-native-async-storage_Example.release.xcconfig"; path = "Target Support Files/Pods-react-native-async-storage_Example/Pods-react-native-async-storage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A7C714E3E836802047948036 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E8D1A8DE5E55B2EA29A3BB2F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A7C714E3E836802047948036 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E8D1A8DE5E55B2EA29A3BB2F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				667FD2B610DFD6B646ED43CB /* Pods-react-native-async-storage_Tests.debug.xcconfig */,
 				94BA7E46634D7D4DCA293206 /* Pods-react-native-async-storage_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,20 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-react-native-async-storage_Example/Pods-react-native-async-storage_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/RCT-Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-async-storage/react_native_async_storage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_async_storage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
